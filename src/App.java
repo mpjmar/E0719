@@ -56,10 +56,10 @@ public class App {
     public static int[] insertaNum(int array[], int num, int pos) {
         int resultado[] = new int[array.length];
         resultado = array;
-        for (int i = array.length - 1; i > pos; i--) {
+        for (int i = array.length - 1; i > pos - 1; i--) {
             resultado[i] = resultado[i - 1]; 
         }
-        resultado[pos] = num;
+        resultado[pos - 1] = num;
         return resultado;
     }
 
